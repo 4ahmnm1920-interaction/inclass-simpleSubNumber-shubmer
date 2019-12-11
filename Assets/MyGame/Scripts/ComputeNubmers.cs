@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class ComputeNubmers : MonoBehaviour
@@ -10,19 +8,10 @@ public class ComputeNubmers : MonoBehaviour
     public InputField ipfVarB;
     public Button btnSubNumbers;
     public Button btnReset;
-    int index = 0;
 
-
-    // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        btnReset.interactable = false;
     }
 
     public void SubNumbersOnClick()
@@ -51,8 +40,8 @@ public class ComputeNubmers : MonoBehaviour
         btnReset.interactable = false;
 
         result.text = "Result";
-        ipfVarA.text = " ";
-        ipfVarB.text = " ";
+        ipfVarA.text = "0";
+        ipfVarB.text = "0";
     }
 
 }
